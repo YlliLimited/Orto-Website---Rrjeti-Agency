@@ -1,3 +1,8 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
 @layer properties {
     @supports (((-webkit-hyphens: none)) and (not (margin-trim: inline))) or
         ((-moz-orient: inline) and (not (color: rgb(from red r g b)))) {
@@ -130,6 +135,7 @@
         --color-border: var(--border);
     }
 }
+
 @layer base {
     *,
     :after,
@@ -487,7 +493,7 @@
         bottom: calc(var(--spacing) * 0);
     }
     .bottom-4 {
-        bottom: calc(var(--spacing) * 4);
+        bottom: calc(var(--spacing) * 3);
     }
     .-left-12 {
         left: calc(var(--spacing) * -12);
@@ -1267,13 +1273,13 @@
     }
     .bg-foreground,
     .bg-foreground\/90 {
-        background-color: var(--foreground);
+        background-color: #032933;
     }
     @supports (color: color-mix(in lab, red, red)) {
         .bg-foreground\/90 {
             background-color: color-mix(
                 in oklab,
-                var(--foreground) 90%,
+                #032933 80%,
                 transparent
             );
         }
@@ -1548,6 +1554,18 @@
     .text-\[10px\] {
         font-size: 10px;
     }
+    .text-\[8px\] {
+        font-size: 8px;
+    }
+    .text-\[6px\] {
+        font-size: 6px;
+    }
+    .text-\[4px\] {
+        font-size: 4px;
+    }
+    .text-\[2px\] {
+        font-size: 2px;
+    }
     .text-\[11px\] {
         font-size: 11px;
     }
@@ -1555,8 +1573,8 @@
         font-size: 14vw;
     }
     .leading-\[0\.9\] {
-        --tw-leading: 0.9;
-        line-height: 0.9;
+        --tw-leading: 1.2;
+        line-height: 1.2;
     }
     .leading-\[0\.85\] {
         --tw-leading: 0.85;
@@ -3051,7 +3069,7 @@
             text-align: left;
         }
     }
-    @media (min-width: 48rem) {
+    @media (min-width: 1300px) {
         .md\:absolute {
             position: absolute;
         }
@@ -3059,7 +3077,7 @@
             right: auto;
         }
         .md\:bottom-6 {
-            bottom: calc(var(--spacing) * 6);
+            bottom: calc(var(--spacing) * 3);
         }
         .md\:left-1\/2 {
             left: 50%;
@@ -3085,6 +3103,10 @@
         .md\:size-\[18px\] {
             width: 18px;
             height: 18px;
+        }
+        .md\:size-\[12px\] {
+            width: 12px;
+            height: 12px;
         }
         .md\:w-\[var\(--radix-navigation-menu-viewport-width\)\] {
             width: var(--radix-navigation-menu-viewport-width);
@@ -3224,7 +3246,7 @@
     .after\:md\:hidden:after {
         content: var(--tw-content);
     }
-    @media (min-width: 48rem) {
+    @media (min-width: 1300px) {
         .after\:md\:hidden:after {
             display: none;
         }
