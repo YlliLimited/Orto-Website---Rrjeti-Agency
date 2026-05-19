@@ -1577,8 +1577,8 @@ html {
         line-height: 1.2;
     }
     .leading-\[0\.85\] {
-        --tw-leading: 0.85;
-        line-height: 0.85;
+        --tw-leading: 1;
+        line-height: 1;
     }
     .leading-none {
         --tw-leading: 1;
