@@ -1572,13 +1572,18 @@ html {
     .text-\[14vw\] {
         font-size: 14vw;
     }
+
     .leading-\[0\.9\] {
         --tw-leading: 1.2;
         line-height: 1.2;
     }
+    .md\:leading-\[0\.85\] {
+        --tw-leading: 0.85;
+        line-height: 0.85;
+    }
     .leading-\[0\.85\] {
-        --tw-leading: 1;
-        line-height: 1;
+        --tw-leading: 0.85;
+        line-height: 0.85;
     }
     .leading-none {
         --tw-leading: 1;
