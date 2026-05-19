@@ -525,6 +525,9 @@ html {
     .z-50 {
         z-index: 50;
     }
+    .z-100 {
+        z-index: 100;
+    }
     .z-\[1\] {
         z-index: 1;
     }
@@ -4044,4 +4047,18 @@ html {
     50% {
         opacity: 0;
     }
+}
+
+
+.enlarged-image {
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+.top-6{
+    top: 1vw;
+}
+
+.right-6{
+    right: 1vw;
 }
