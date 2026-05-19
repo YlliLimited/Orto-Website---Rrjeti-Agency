@@ -4062,3 +4062,18 @@ html {
 .right-6{
     right: 1vw;
 }
+
+
+
+
+/* This is the starting state of your elements */
+.fade-in {
+  opacity: 0;
+  /* 0.9s provides a medium, deliberate speed. The bezier creates a smooth, decelerating fade */
+  transition: opacity 0.9s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* This class will be added by JavaScript when the element is in view */
+.fade-in.visible {
+  opacity: 1;
+}

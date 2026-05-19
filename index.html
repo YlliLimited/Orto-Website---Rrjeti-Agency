@@ -25,14 +25,6 @@
             content="Orto Design Studio is a minimalist, responsive website showcasing premium furniture with a sleek, modern aesthetic."
         />
         <meta
-            property="og:image"
-            content="images/id-preview-abf61e28--41edee40-fc46-464f-8596-2535040d5bc5.lovable.app-1778501697812.png"
-        />
-        <meta
-            name="twitter:image"
-            content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/fa83edc9-ece5-4fc2-bac9-77483a53760f/id-preview-abf61e28--41edee40-fc46-464f-8596-2535040d5bc5.lovable.app-1778501697812.png"
-        />
-        <meta
             name="description"
             content="ORTO Furniture — fabrikë në Kosovë e specializuar në mobilje metalike: karrige, tavolina, sete, shankë dhe punime CNC të personalizuara për restorante dhe biznese."
         />
@@ -51,172 +43,6 @@
                 font-style: normal;
                 font-display: swap;
             }
-
-            #lovable-badge {
-                --badge-bg: #1b1b1b;
-                --badge-text: #c5c1b9;
-                --badge-text-hover: #dcdad5;
-                --badge-radius: 6px;
-                --badge-padding: 8px;
-                --badge-gap: 6px;
-                --badge-shadow:
-                    0 0 0 1px rgba(0, 0, 0, 0.88),
-                    0 1px 0 0 rgba(0, 0, 0, 0.04),
-                    0 2px 2px -1px rgba(0, 0, 0, 0.08),
-                    0 4px 4px -2px rgba(0, 0, 0, 0.08),
-                    0 8px 8px -4px rgba(0, 0, 0, 0.08),
-                    0 16px 16px -8px rgba(0, 0, 0, 0.08);
-                --badge-transition-duration: 0.2s;
-                --badge-transition-easing: cubic-bezier(0.16, 1, 0.32, 1);
-                --focus-color: #575ecf;
-                --focus-offset: 2px;
-                --focus-width: 2px;
-
-                position: fixed;
-                bottom: 12px;
-                right: 12px;
-                height: 24px;
-                display: flex;
-                align-items: center;
-                z-index: 1000000;
-                background-color: var(--badge-bg);
-                color: var(--badge-text);
-                border-radius: var(--badge-radius);
-                box-shadow: var(--badge-shadow);
-                font-size: 12px;
-                font-family:
-                    CameraPlainVariable,
-                    "CameraPlainVariable Fallback",
-                    -apple-system,
-                    BlinkMacSystemFont,
-                    "Segoe UI",
-                    Roboto,
-                    sans-serif;
-                font-weight: 400 !important;
-                text-transform: none !important;
-                font-feature-settings: normal !important;
-                transform: translateZ(0);
-                will-change: transform, opacity;
-            }
-
-            #lovable-badge-cta {
-                display: flex;
-                align-items: center;
-                gap: var(--badge-gap);
-                padding: 0 var(--badge-padding);
-                height: 100%;
-                color: inherit;
-                text-decoration: none;
-                white-space: nowrap;
-                border-radius: var(--badge-radius) 0 0 var(--badge-radius);
-                transition:
-                    background-color var(--badge-transition-duration) ease,
-                    color var(--badge-transition-duration) ease,
-                    transform 0.1s ease;
-            }
-
-            #lovable-badge-cta:hover {
-                background: rgba(255, 255, 255, 0.04);
-                color: var(--badge-text-hover);
-            }
-
-            #lovable-badge-cta:active {
-                transform: scale(0.98);
-            }
-
-            #lovable-badge-cta:focus {
-                outline: none;
-            }
-
-            #lovable-badge-cta:focus-visible {
-                outline: var(--focus-width) solid var(--focus-color);
-                outline-offset: var(--focus-offset);
-                z-index: 1;
-            }
-
-            #lovable-badge-text {
-                line-height: 1;
-            }
-
-            #lovable-badge-divider {
-                width: 1px;
-                height: 24px;
-                background-color: rgba(255, 255, 255, 0.04);
-                flex-shrink: 0;
-            }
-
-            #lovable-badge-close {
-                width: 24px;
-                height: 24px;
-                min-width: 24px;
-                min-height: 24px;
-                cursor: pointer;
-                background: none;
-                border: none;
-                padding: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 0 var(--badge-radius) var(--badge-radius) 0;
-                flex-shrink: 0;
-                transition:
-                    background-color var(--badge-transition-duration) ease,
-                    transform 0.1s ease;
-            }
-
-            #lovable-badge-close:hover {
-                background: rgba(255, 255, 255, 0.04);
-            }
-
-            #lovable-badge-close:active {
-                transform: scale(0.92);
-            }
-
-            #lovable-badge-close:focus {
-                outline: none;
-            }
-
-            #lovable-badge-close:focus-visible {
-                outline: var(--focus-width) solid var(--focus-color);
-                outline-offset: calc(var(--focus-offset) * -1);
-                z-index: 1;
-            }
-
-            #lovable-badge-close svg path {
-                fill: var(--badge-text);
-                transition: fill var(--badge-transition-duration) ease;
-            }
-
-            #lovable-badge-close:hover svg path {
-                fill: var(--badge-text-hover);
-            }
-
-            @media (prefers-reduced-motion: reduce) {
-                #lovable-badge-cta,
-                #lovable-badge-close,
-                #lovable-badge-close svg path {
-                    transition: none;
-                }
-
-                #lovable-badge-cta:active,
-                #lovable-badge-close:active {
-                    transform: none;
-                }
-            }
-
-            @media (prefers-contrast: high) {
-                #lovable-badge {
-                    --badge-bg: #000;
-                    --badge-text: #fff;
-                    --badge-text-hover: #fff;
-                    border: 2px solid currentColor;
-                }
-
-                #lovable-badge-cta:focus-visible,
-                #lovable-badge-close:focus-visible {
-                    outline-width: 3px;
-                }
-            }
         </style>
         <script
             defer=""
@@ -232,7 +58,7 @@
             >
                 <header class="absolute top-0 left-0 right-0 z-30">
                     <div
-                        class="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-6 md:px-10 md:py-8"
+                        class="mx-auto fade-in flex max-w-[1400px] items-center justify-between px-6 py-6 md:px-10 md:py-8"
                     >
                         <img
                             src="images/ortoLogo.png"
@@ -253,7 +79,7 @@
                     class="wood-grain absolute right-0 top-0 hidden h-screen w-1.5 md:block"
                 ></div>
                 <div
-                    class="relative mx-auto grid min-h-screen max-w-[1400px] grid-cols-1 items-end gap-10 px-6 pb-20 pt-32 md:grid-cols-12 md:px-10 md:pt-40 md:pb-24"
+                    class="relative fade-in mx-auto grid min-h-screen max-w-[1400px] grid-cols-1 items-end gap-10 px-6 pb-20 pt-32 md:grid-cols-12 md:px-10 md:pt-40 md:pb-24"
                 >
                     <div class="reveal md:col-span-6">
                         <div
@@ -298,7 +124,7 @@
                     </div>
                     <div class="relative md:col-span-6">
                         <div
-                            class="relative aspect-[4/5] w-full overflow-hidden"
+                            class="relative fade-in aspect-[4/5] w-full overflow-hidden"
                         >
                             <img
                                 src="Foto/novara.png"
@@ -318,7 +144,7 @@
                     class="relative border-y border-paper/15 py-5 overflow-hidden"
                 >
                     <div
-                        class="marquee flex w-max gap-12 whitespace-nowrap font-serif text-2xl italic text-paper/60 md:text-3xl"
+                        class="marquee fade-in flex w-max gap-12 whitespace-nowrap font-serif text-2xl italic text-paper/60 md:text-3xl"
                     >
                         <div class="flex items-center gap-12">
                             <span class="flex items-center gap-12"
@@ -394,11 +220,11 @@
                             <div
                                 class="mb-5 flex items-center gap-3 text-[10px] uppercase tracking-[0.3em] text-foreground/50"
                             >
-                                <span class="h-px w-10 bg-wood"></span>Katalogu
+                                <span class="h-px fade-in w-10 bg-wood"></span>Katalogu
                                 · 01 Karrige
                             </div>
                             <h2
-                                class="font-serif text-5xl leading-[0.9] tracking-tight md:text-7xl"
+                                class="font-serif text-5xl fade-in leading-[0.9] tracking-tight md:text-7xl"
                                 style="letter-spacing: -0.035em"
                             >
                                 Karrige.<br /><em class="text-teal"
@@ -407,7 +233,7 @@
                             </h2>
                         </div>
                         <p
-                            class="max-w-sm text-sm font-light leading-relaxed text-foreground/60"
+                            class="max-w-sm fade-in text-sm font-light leading-relaxed text-foreground/60"
                         >
                             Çelik me powder coat, tapiceri e zgjedhur sipas
                             kërkesës. Çdo karrige është e gatshme për porosi me
@@ -417,7 +243,7 @@
                     <div
                         class="grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 md:grid-cols-3 md:gap-y-20"
                     >
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/16.jpg')"
@@ -454,7 +280,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/19.jpg')"
@@ -491,7 +317,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/aria.jpg')"
@@ -528,7 +354,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/aura.jpg')"
@@ -565,7 +391,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/aura1.jpg')"
@@ -602,7 +428,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/aura2.jpg')"
@@ -639,7 +465,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/auralux.png')"
@@ -676,7 +502,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/blisX.jpg')"
@@ -713,7 +539,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/blisX1.jpg')"
@@ -750,7 +576,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/bologna.png')"
@@ -787,7 +613,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/CALMA.jpg')"
@@ -824,7 +650,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/capri3.jpg')"
@@ -861,7 +687,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/delta2.jpg')"
@@ -898,7 +724,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/elite1.jpg')"
@@ -935,7 +761,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/etna2.jpg')"
@@ -972,7 +798,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/garden.jpg')"
@@ -1009,7 +835,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/gava.png')"
@@ -1046,7 +872,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/lido1.jpg')"
@@ -1083,7 +909,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/NIVA.png')"
@@ -1120,7 +946,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/novara.png')"
@@ -1157,7 +983,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/olmo.jpg')"
@@ -1194,7 +1020,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/oslo.jpg')"
@@ -1231,7 +1057,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/palma.jpg')"
@@ -1268,7 +1094,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/plaza.jpg')"
@@ -1305,7 +1131,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/plaza1.jpg')"
@@ -1342,7 +1168,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/regina3.jpg')"
@@ -1379,7 +1205,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/regina4.jpg')"
@@ -1416,7 +1242,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/RETRO.jpg')"
@@ -1453,7 +1279,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/riva.jpg')"
@@ -1490,7 +1316,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/riva1.jpg')"
@@ -1527,7 +1353,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/roma.jpg')"
@@ -1564,7 +1390,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/roma2.png')"
@@ -1601,7 +1427,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/senso.jpg')"
@@ -1638,7 +1464,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="
@@ -1677,7 +1503,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/titan.jpg')"
@@ -1714,7 +1540,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/toto.jpg')"
@@ -1751,7 +1577,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/vanta.png')"
@@ -1788,7 +1614,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="
@@ -1829,7 +1655,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="
@@ -1870,7 +1696,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="
@@ -1911,7 +1737,7 @@
                             </p>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/zenX.jpg')"
@@ -1962,11 +1788,11 @@
                             <div
                                 class="mb-5 flex items-center gap-3 text-[10px] uppercase tracking-[0.3em] text-paper/55"
                             >
-                                <span class="h-px w-10 bg-wood-light"></span
+                                <span class="h-px fade-in w-10 bg-wood-light"></span
                                 >Katalogu · 02 Tavolina
                             </div>
                             <h2
-                                class="font-serif text-5xl leading-[0.9] tracking-tight md:text-7xl"
+                                class="font-serif fade-in text-5xl leading-[0.9] tracking-tight md:text-7xl"
                                 style="letter-spacing: -0.035em"
                             >
                                 Tavolina.<br /><em class="text-wood-light"
@@ -1975,7 +1801,7 @@
                             </h2>
                         </div>
                         <p
-                            class="max-w-sm text-sm font-light leading-relaxed text-paper/65"
+                            class="max-w-sm fade-in text-sm font-light leading-relaxed text-paper/65"
                         >
                             Bazat metalike kombinohen me top kompakt ose dru
                             natyral. Forma dhe dimensionet sipas konceptit tuaj.
@@ -1984,7 +1810,7 @@
                     <div
                         class="grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 md:grid-cols-3 md:gap-y-20"
                     >
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/t1.jpg')"
@@ -2023,7 +1849,7 @@
                             </div>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/t2.jpg')"
@@ -2062,7 +1888,7 @@
                             </div>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/Tavoline2.jpg')"
@@ -2101,7 +1927,7 @@
                             </div>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/tavoline3.png')"
@@ -2140,7 +1966,7 @@
                             </div>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/tavoline4.png')"
@@ -2179,7 +2005,7 @@
                             </div>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/tavoline5.png')"
@@ -2218,7 +2044,7 @@
                             </div>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/tavoline6.png')"
@@ -2257,7 +2083,7 @@
                             </div>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/tavoline7.png')"
@@ -2307,11 +2133,11 @@
                             <div
                                 class="mb-5 flex items-center gap-3 text-[10px] uppercase tracking-[0.3em] text-foreground/50"
                             >
-                                <span class="h-px w-10 bg-wood"></span>Katalogu
+                                <span class="h-px fade-in w-10 bg-wood"></span>Katalogu
                                 · 03 Sete
                             </div>
                             <h2
-                                class="font-serif text-5xl leading-[0.9] tracking-tight md:text-7xl"
+                                class="font-serif fade-in text-5xl leading-[0.9] tracking-tight md:text-7xl"
                                 style="letter-spacing: -0.035em"
                             >
                                 Sete të plota.<br /><em class="text-teal"
@@ -2320,7 +2146,7 @@
                             </h2>
                         </div>
                         <p
-                            class="max-w-sm text-sm font-light leading-relaxed text-foreground/60"
+                            class="max-w-sm fade-in text-sm font-light leading-relaxed text-foreground/60"
                         >
                             Separe, kombinime karrige-tavolinë dhe konfigurime
                             për restorante. Të dorëzuara gati për montim.
@@ -2329,12 +2155,12 @@
                     <div
                         class="grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 md:grid-cols-3 md:gap-y-20"
                     >
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/arco.jpg')"
                             >
-                                <article class="group">
+                                <article class="group fade-in">
                                     <div
                                         class="relative aspect-[4/5] w-full overflow-hidden bg-secondary"
                                     >
@@ -2370,12 +2196,12 @@
                             </div>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/atos.jpg')"
                             >
-                                <article class="group">
+                                <article class="group fade-in">
                                     <div
                                         class="relative aspect-[4/5] w-full overflow-hidden bg-secondary"
                                     >
@@ -2411,12 +2237,12 @@
                             </div>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/aura set.jpg')"
                             >
-                                <article class="group">
+                                <article class="group fade-in">
                                     <div
                                         class="relative aspect-[4/5] w-full overflow-hidden bg-secondary"
                                     >
@@ -2452,12 +2278,12 @@
                             </div>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/delta set.jpg')"
                             >
-                                <article class="group">
+                                <article class="group fade-in">
                                     <div
                                         class="relative aspect-[4/5] w-full overflow-hidden bg-secondary"
                                     >
@@ -2493,12 +2319,12 @@
                             </div>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/star.jpg')"
                             >
-                                <article class="group">
+                                <article class="group fade-in">
                                     <div
                                         class="relative aspect-[4/5] w-full overflow-hidden bg-secondary"
                                     >
@@ -2534,12 +2360,12 @@
                             </div>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/zara.jpg')"
                             >
-                                <article class="group">
+                                <article class="group fade-in">
                                     <div
                                         class="relative aspect-[4/5] w-full overflow-hidden bg-secondary"
                                     >
@@ -2575,12 +2401,12 @@
                             </div>
                         </article>
 
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="group cursor-pointer overflow-hidden"
                                 onclick="openLightbox('Foto/zenX set.jpg')"
                             >
-                                <article class="group">
+                                <article class="group fade-in">
                                     <div
                                         class="relative aspect-[4/5] w-full overflow-hidden bg-secondary"
                                     >
@@ -2630,11 +2456,11 @@
                             <div
                                 class="mb-5 flex items-center gap-3 text-[10px] uppercase tracking-[0.3em] text-paper/55"
                             >
-                                <span class="h-px w-10 bg-wood-light"></span
+                                <span class="h-px fade-in w-10 bg-wood-light"></span
                                 >Katalogu · 04 Të Tjera
                             </div>
                             <h2
-                                class="font-serif text-5xl leading-[0.9] tracking-tight md:text-7xl"
+                                class="font-serif fade-in text-5xl leading-[0.9] tracking-tight md:text-7xl"
                                 style="letter-spacing: -0.035em"
                             >
                                 Punime me porosi.<br /><em
@@ -2644,7 +2470,7 @@
                             </h2>
                         </div>
                         <p
-                            class="max-w-sm text-sm font-light leading-relaxed text-paper/65"
+                            class="max-w-sm fade-in text-sm font-light leading-relaxed text-paper/65"
                         >
                             Shankë, dyer metali, panele CNC dhe çdo element të
                             personalizuar. Sillni dimensionet — ne i realizojmë.
@@ -2653,7 +2479,7 @@
                     <div
                         class="grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 md:grid-cols-3 md:gap-y-20"
                     >
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="relative aspect-[4/5] w-full overflow-hidden bg-secondary"
                             >
@@ -2684,7 +2510,7 @@
                                 Bar i punuar me dorë
                             </p>
                         </article>
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="relative aspect-[4/5] w-full overflow-hidden bg-secondary"
                             >
@@ -2715,7 +2541,7 @@
                                 Derë metali CNC
                             </p>
                         </article>
-                        <article class="group">
+                        <article class="group fade-in">
                             <div
                                 class="relative aspect-[4/5] w-full overflow-hidden bg-secondary"
                             >
@@ -2755,7 +2581,7 @@
                 >
                     <div class="md:col-span-5">
                         <div
-                            class="relative aspect-[4/5] w-full overflow-hidden"
+                            class="relative fade-in aspect-[4/5] w-full overflow-hidden"
                         >
                             <img
                                 src="images/craft-E_gWiY6-.jpg"
@@ -2769,19 +2595,19 @@
                     </div>
                     <div class="md:col-span-7 md:pl-8">
                         <div
-                            class="mb-6 flex items-center gap-3 text-[10px] uppercase tracking-[0.3em] text-foreground/50"
+                            class="mb-6 flex fade-in items-center gap-3 text-[10px] uppercase tracking-[0.3em] text-foreground/50"
                         >
-                            <span class="h-px w-10 bg-wood"></span>Fabrika
+                            <span class="h-px w-10 bg-wood "></span>Fabrika
                         </div>
                         <h2
-                            class="font-serif text-5xl leading-[0.9] tracking-tight md:text-[5.5rem]"
+                            class="font-serif fade-in text-5xl leading-[0.9] tracking-tight md:text-[5.5rem]"
                             style="letter-spacing: -0.04em"
                         >
                             Një ide,
                             <em class="text-teal">CNC dhe duar të qeta.</em>
                         </h2>
                         <p
-                            class="mt-8 max-w-xl text-base font-light leading-relaxed text-foreground/70 md:text-lg"
+                            class="mt-8 max-w-xl fade-in text-base font-light leading-relaxed text-foreground/70 md:text-lg"
                         >
                             ORTO Furniture është fabrikë prodhuese e
                             specializuar në përpunim metali. Punojmë
@@ -2791,7 +2617,7 @@
                             detajeve tuaja.
                         </p>
                         <dl
-                            class="mt-14 grid grid-cols-2 gap-y-10 sm:grid-cols-4"
+                            class="mt-14 fade-in grid grid-cols-2 gap-y-10 sm:grid-cols-4"
                         >
                             <div>
                                 <dt
@@ -2853,12 +2679,12 @@
                 <div class="mx-auto max-w-[1400px] px-6 md:px-10">
                     <div class="mb-16 max-w-3xl">
                         <div
-                            class="mb-5 flex items-center gap-3 text-[10px] uppercase tracking-[0.3em] text-paper/55"
+                            class="mb-5 flex items-center gap-3 fade-in text-[10px] uppercase tracking-[0.3em] text-paper/55"
                         >
-                            <span class="h-px w-10 bg-wood-light"></span>Kontakt
+                            <span class="h-px w-10 bg-wood-light "></span>Kontakt
                         </div>
                         <h2
-                            class="font-serif text-5xl leading-[0.9] tracking-tight md:text-7xl"
+                            class="font-serif fade-in text-5xl leading-[0.9] tracking-tight md:text-7xl"
                             style="letter-spacing: -0.035em"
                         >
                             Sillni projektin.
@@ -2870,12 +2696,12 @@
                     >
                         <div>
                             <div
-                                class="text-[10px] uppercase tracking-[0.3em] text-paper/50"
+                                class="text-[10px] fade-in uppercase tracking-[0.3em] text-paper/50"
                             >
                                 Adresa
                             </div>
                             <p
-                                class="whitespace-pre-line font-serif text-3xl tracking-tight md:text-4xl"
+                                class="whitespace-pre-line fade-in font-serif text-3xl tracking-tight md:text-4xl"
                                 style="padding: 0; margin: 0"
                             >
                                 Nëntori i Dytë Balshaj 15050
@@ -2883,25 +2709,25 @@
                         </div>
                         <div>
                             <div
-                                class="text-[10px] uppercase tracking-[0.3em] text-paper/50"
+                                class="text-[10px] fade-in uppercase tracking-[0.3em] text-paper/50"
                             >
                                 Telefon
                             </div>
                             <a
                                 href="tel:+38343970249"
-                                style="padding: 0; margin: 0; margin-top: 40px;"
-                                class="block whitespace-pre-line font-serif text-3xl tracking-tight hover:text-wood-light md:text-4xl"
+                                style="padding: 0; margin: 0; margin-top: 40px"
+                                class="block fade-in whitespace-pre-line font-serif text-3xl tracking-tight hover:text-wood-light md:text-4xl"
                                 >+383 43 970 249</a
                             >
                         </div>
                         <div>
                             <div
-                                class="text-[10px] uppercase tracking-[0.3em] text-paper/50"
+                                class="text-[10px] fade-in uppercase tracking-[0.3em] text-paper/50"
                             >
                                 Tregjet
                             </div>
                             <p
-                                class="whitespace-pre-line font-serif text-3xl tracking-tight md:text-4xl"
+                                class="whitespace-pre-line fade-in font-serif text-3xl tracking-tight md:text-4xl"
                                 style="padding: 0; margin: 0"
                             >
                                 Kosovë · Shqipëri Gjermani · Zvicër
@@ -2920,9 +2746,10 @@
                             src="images/ortoLogo.png"
                             alt="Orto Logo"
                             style="width: 300px"
+                            class="fade-in"
                         />
                         <p
-                            class="mt-6 max-w-sm text-xs uppercase tracking-[0.25em] text-paper/50"
+                            class="mt-6 max-w-sm  text-xs uppercase tracking-[0.25em] text-paper/50"
                         >
                             Fabrikë mobiljesh metalike · Balshaj, Kosovë
                         </p>
@@ -3174,6 +3001,40 @@
                 ) {
                     closeLightbox();
                 }
+            });
+
+            document.addEventListener("DOMContentLoaded", () => {
+                // Select all elements with the 'fade-in' class
+                const fadeElements = document.querySelectorAll(".fade-in");
+
+                // Configure the observer
+                const observerOptions = {
+                    root: null, // Uses the browser viewport
+                    // The negative bottom margin creates your 30% trigger line
+                    rootMargin: "0px 0px -30% 0px",
+                    threshold: 0, // Triggers the exact moment the element touches that 30% line
+                };
+
+                const observer = new IntersectionObserver(
+                    (entries, observer) => {
+                        entries.forEach((entry) => {
+                            // If the element has crossed the 30% threshold
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add("visible");
+
+                                // Optional but recommended: Stop observing the element once it has faded in
+                                // This frees up browser memory and keeps the site fast
+                                observer.unobserve(entry.target);
+                            }
+                        });
+                    },
+                    observerOptions,
+                );
+
+                // Tell the observer to watch each element
+                fadeElements.forEach((element) => {
+                    observer.observe(element);
+                });
             });
         </script>
         <!--/$-->
