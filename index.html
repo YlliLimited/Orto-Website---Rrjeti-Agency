@@ -314,6 +314,12 @@
                 }
             }
 
+            /* ===== Contact: two columns on desktop ===== */
+            @media (min-width: 768px) {
+                .orto-contact-grid {
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                }
+            }
             /* ===== Bottom nav: fit five items on phones ===== */
             @media (max-width: 767px) {
                 nav[aria-label="Catalogue"] a {
@@ -429,7 +435,7 @@
                             <div
                                 class="absolute bottom-4 left-4 right-4 flex items-end justify-between text-[10px] uppercase tracking-[0.25em] text-paper/80"
                             >
-                                <span>N°16 — Novara</span
+                                <span>N°15 — Novara</span
                                 ><span>CNC · Powder Coat</span>
                             </div>
                         </div>
@@ -588,8 +594,8 @@
                                 <div class="orto-track">
                                     <div class="orto-slide" onclick="openLightbox(this)">
                                         <img
-                                            src="Foto/19.jpg"
-                                            alt="Vento"
+                                            src="Foto/aria.jpg"
+                                            alt="Aria"
                                             loading="lazy"
                                             class="h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
                                         />
@@ -604,44 +610,11 @@
                                 class="mt-5 flex items-baseline justify-between border-b border-foreground/15 pb-3"
                             >
                                 <h3 class="font-serif text-2xl tracking-tight">
-                                    Vento
-                                </h3>
-                                <span
-                                    class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >02</span
-                                >
-                            </div>
-                        </article>
-
-                        <article class="group fade-in">
-                            <div
-                                class="orto-slider orto-card-slider cursor-pointer relative aspect-[4/5] w-full overflow-hidden bg-secondary"
-                                data-slider
-                            >
-                                <div class="orto-track">
-                                    <div class="orto-slide" onclick="openLightbox(this)">
-                                        <img
-                                            src="Foto/aria.jpg"
-                                            alt="Aria"
-                                            loading="lazy"
-                                            class="h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
-                                        />
-                                    </div>
-                                </div>
-                                <span
-                                    class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°03</span
-                                >
-                            </div>
-                            <div
-                                class="mt-5 flex items-baseline justify-between border-b border-foreground/15 pb-3"
-                            >
-                                <h3 class="font-serif text-2xl tracking-tight">
                                     Aria
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >03</span
+                                    >02</span
                                 >
                             </div>
                         </article>
@@ -679,7 +652,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°04</span
+                                    >K°03</span
                                 >
                                 <button type="button" class="orto-arrow orto-arrow--prev" data-prev aria-label="Previous photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
                                 <button type="button" class="orto-arrow orto-arrow--next" data-next aria-label="Next photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
@@ -693,7 +666,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >04</span
+                                    >03</span
                                 >
                             </div>
                         </article>
@@ -715,7 +688,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°05</span
+                                    >K°04</span
                                 >
                             </div>
                             <div
@@ -726,7 +699,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >05</span
+                                    >04</span
                                 >
                             </div>
                         </article>
@@ -756,7 +729,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°06</span
+                                    >K°05</span
                                 >
                                 <button type="button" class="orto-arrow orto-arrow--prev" data-prev aria-label="Previous photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
                                 <button type="button" class="orto-arrow orto-arrow--next" data-next aria-label="Next photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
@@ -770,7 +743,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >06</span
+                                    >05</span
                                 >
                             </div>
                         </article>
@@ -792,7 +765,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°07</span
+                                    >K°06</span
                                 >
                             </div>
                             <div
@@ -803,7 +776,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >07</span
+                                    >06</span
                                 >
                             </div>
                         </article>
@@ -825,7 +798,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°08</span
+                                    >K°07</span
                                 >
                             </div>
                             <div
@@ -836,7 +809,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >08</span
+                                    >07</span
                                 >
                             </div>
                         </article>
@@ -858,7 +831,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°09</span
+                                    >K°08</span
                                 >
                             </div>
                             <div
@@ -869,7 +842,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >09</span
+                                    >08</span
                                 >
                             </div>
                         </article>
@@ -891,7 +864,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°10</span
+                                    >K°09</span
                                 >
                             </div>
                             <div
@@ -902,7 +875,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >10</span
+                                    >09</span
                                 >
                             </div>
                         </article>
@@ -924,7 +897,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°11</span
+                                    >K°10</span
                                 >
                             </div>
                             <div
@@ -935,7 +908,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >11</span
+                                    >10</span
                                 >
                             </div>
                         </article>
@@ -965,7 +938,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°12</span
+                                    >K°11</span
                                 >
                                 <button type="button" class="orto-arrow orto-arrow--prev" data-prev aria-label="Previous photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
                                 <button type="button" class="orto-arrow orto-arrow--next" data-next aria-label="Next photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
@@ -979,7 +952,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >12</span
+                                    >11</span
                                 >
                             </div>
                         </article>
@@ -1001,7 +974,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°13</span
+                                    >K°12</span
                                 >
                             </div>
                             <div
@@ -1012,7 +985,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >13</span
+                                    >12</span
                                 >
                             </div>
                         </article>
@@ -1034,7 +1007,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°14</span
+                                    >K°13</span
                                 >
                             </div>
                             <div
@@ -1045,7 +1018,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >14</span
+                                    >13</span
                                 >
                             </div>
                         </article>
@@ -1067,7 +1040,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°15</span
+                                    >K°14</span
                                 >
                             </div>
                             <div
@@ -1078,7 +1051,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >15</span
+                                    >14</span
                                 >
                             </div>
                         </article>
@@ -1100,7 +1073,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°16</span
+                                    >K°15</span
                                 >
                             </div>
                             <div
@@ -1111,40 +1084,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >16</span
-                                >
-                            </div>
-                        </article>
-
-                        <article class="group fade-in">
-                            <div
-                                class="orto-slider orto-card-slider cursor-pointer relative aspect-[4/5] w-full overflow-hidden bg-secondary"
-                                data-slider
-                            >
-                                <div class="orto-track">
-                                    <div class="orto-slide" onclick="openLightbox(this)">
-                                        <img
-                                            src="Foto/olmo.jpg"
-                                            alt="Olmo"
-                                            loading="lazy"
-                                            class="h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
-                                        />
-                                    </div>
-                                </div>
-                                <span
-                                    class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°17</span
-                                >
-                            </div>
-                            <div
-                                class="mt-5 flex items-baseline justify-between border-b border-foreground/15 pb-3"
-                            >
-                                <h3 class="font-serif text-2xl tracking-tight">
-                                    Olmo
-                                </h3>
-                                <span
-                                    class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >17</span
+                                    >15</span
                                 >
                             </div>
                         </article>
@@ -1166,7 +1106,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°18</span
+                                    >K°16</span
                                 >
                             </div>
                             <div
@@ -1177,7 +1117,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >18</span
+                                    >16</span
                                 >
                             </div>
                         </article>
@@ -1199,7 +1139,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°19</span
+                                    >K°17</span
                                 >
                             </div>
                             <div
@@ -1210,7 +1150,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >19</span
+                                    >17</span
                                 >
                             </div>
                         </article>
@@ -1240,7 +1180,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°20</span
+                                    >K°18</span
                                 >
                                 <button type="button" class="orto-arrow orto-arrow--prev" data-prev aria-label="Previous photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
                                 <button type="button" class="orto-arrow orto-arrow--next" data-next aria-label="Next photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
@@ -1254,7 +1194,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >20</span
+                                    >18</span
                                 >
                             </div>
                         </article>
@@ -1284,7 +1224,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°21</span
+                                    >K°19</span
                                 >
                                 <button type="button" class="orto-arrow orto-arrow--prev" data-prev aria-label="Previous photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
                                 <button type="button" class="orto-arrow orto-arrow--next" data-next aria-label="Next photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
@@ -1298,7 +1238,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >21</span
+                                    >19</span
                                 >
                             </div>
                         </article>
@@ -1328,7 +1268,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°22</span
+                                    >K°20</span
                                 >
                                 <button type="button" class="orto-arrow orto-arrow--prev" data-prev aria-label="Previous photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
                                 <button type="button" class="orto-arrow orto-arrow--next" data-next aria-label="Next photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
@@ -1342,7 +1282,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >22</span
+                                    >20</span
                                 >
                             </div>
                         </article>
@@ -1364,7 +1304,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°23</span
+                                    >K°21</span
                                 >
                             </div>
                             <div
@@ -1375,7 +1315,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >23</span
+                                    >21</span
                                 >
                             </div>
                         </article>
@@ -1397,7 +1337,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°24</span
+                                    >K°22</span
                                 >
                             </div>
                             <div
@@ -1408,7 +1348,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >24</span
+                                    >22</span
                                 >
                             </div>
                         </article>
@@ -1430,7 +1370,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°25</span
+                                    >K°23</span
                                 >
                             </div>
                             <div
@@ -1441,7 +1381,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >25</span
+                                    >23</span
                                 >
                             </div>
                         </article>
@@ -1463,7 +1403,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°26</span
+                                    >K°24</span
                                 >
                             </div>
                             <div
@@ -1474,7 +1414,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >26</span
+                                    >24</span
                                 >
                             </div>
                         </article>
@@ -1496,7 +1436,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°27</span
+                                    >K°25</span
                                 >
                             </div>
                             <div
@@ -1507,7 +1447,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >27</span
+                                    >25</span
                                 >
                             </div>
                         </article>
@@ -1529,7 +1469,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°28</span
+                                    >K°26</span
                                 >
                             </div>
                             <div
@@ -1540,7 +1480,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >28</span
+                                    >26</span
                                 >
                             </div>
                         </article>
@@ -1562,7 +1502,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°29</span
+                                    >K°27</span
                                 >
                             </div>
                             <div
@@ -1573,7 +1513,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >29</span
+                                    >27</span
                                 >
                             </div>
                         </article>
@@ -1595,7 +1535,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°30</span
+                                    >K°28</span
                                 >
                             </div>
                             <div
@@ -1606,7 +1546,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >30</span
+                                    >28</span
                                 >
                             </div>
                         </article>
@@ -1628,7 +1568,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°31</span
+                                    >K°29</span
                                 >
                             </div>
                             <div
@@ -1639,7 +1579,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >31</span
+                                    >29</span
                                 >
                             </div>
                         </article>
@@ -1661,7 +1601,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°32</span
+                                    >K°30</span
                                 >
                             </div>
                             <div
@@ -1672,7 +1612,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >32</span
+                                    >30</span
                                 >
                             </div>
                         </article>
@@ -1694,7 +1634,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°33</span
+                                    >K°31</span
                                 >
                             </div>
                             <div
@@ -1705,7 +1645,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >33</span
+                                    >31</span
                                 >
                             </div>
                         </article>
@@ -1727,7 +1667,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°34</span
+                                    >K°32</span
                                 >
                             </div>
                             <div
@@ -1738,7 +1678,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >34</span
+                                    >32</span
                                 >
                             </div>
                         </article>
@@ -1760,7 +1700,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°35</span
+                                    >K°33</span
                                 >
                             </div>
                             <div
@@ -1771,7 +1711,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >35</span
+                                    >33</span
                                 >
                             </div>
                         </article>
@@ -1793,7 +1733,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°36</span
+                                    >K°34</span
                                 >
                             </div>
                             <div
@@ -1804,7 +1744,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >36</span
+                                    >34</span
                                 >
                             </div>
                         </article>
@@ -1826,7 +1766,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°37</span
+                                    >K°35</span
                                 >
                             </div>
                             <div
@@ -1837,7 +1777,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >37</span
+                                    >35</span
                                 >
                             </div>
                         </article>
@@ -1859,7 +1799,7 @@
                                 </div>
                                 <span
                                     class="orto-code absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                    >K°38</span
+                                    >K°36</span
                                 >
                             </div>
                             <div
@@ -1870,7 +1810,7 @@
                                 </h3>
                                 <span
                                     class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                    >38</span
+                                    >36</span
                                 >
                             </div>
                         </article>
@@ -2832,7 +2772,7 @@
                                         </h3>
                                         <span
                                             class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                            >0<!-- -->1</span
+                                            >01</span
                                         >
                                     </div>
                                     <p
@@ -2871,85 +2811,7 @@
                                         </h3>
                                         <span
                                             class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                            >0<!-- -->2</span
-                                        >
-                                    </div>
-                                    <p
-                                        class="mt-2 text-xs uppercase tracking-[0.2em] text-foreground/55"
-                                    ></p>
-                                </article>
-                            </div>
-                        </article>
-
-                        <article class="group fade-in">
-                            <div
-                                class="group cursor-pointer overflow-hidden"
-                                onclick="openLightbox('Foto/aura set.jpg')"
-                            >
-                                <article class="group fade-in">
-                                    <div
-                                        class="relative aspect-[4/5] w-full overflow-hidden bg-secondary"
-                                    >
-                                        <img
-                                            src="Foto/aura set.jpg"
-                                            alt="Aura Set"
-                                            loading="lazy"
-                                            class="h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
-                                        /><span
-                                            class="absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                            >S°03</span
-                                        >
-                                    </div>
-                                    <div
-                                        class="mt-5 flex items-baseline justify-between border-b border-foreground/15 pb-3"
-                                    >
-                                        <h3
-                                            class="font-serif text-2xl tracking-tight"
-                                        >
-                                            Aura Set
-                                        </h3>
-                                        <span
-                                            class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                            >0<!-- -->3</span
-                                        >
-                                    </div>
-                                    <p
-                                        class="mt-2 text-xs uppercase tracking-[0.2em] text-foreground/55"
-                                    ></p>
-                                </article>
-                            </div>
-                        </article>
-
-                        <article class="group fade-in">
-                            <div
-                                class="group cursor-pointer overflow-hidden"
-                                onclick="openLightbox('Foto/delta set.jpg')"
-                            >
-                                <article class="group fade-in">
-                                    <div
-                                        class="relative aspect-[4/5] w-full overflow-hidden bg-secondary"
-                                    >
-                                        <img
-                                            src="Foto/delta set.jpg"
-                                            alt="Delta Set"
-                                            loading="lazy"
-                                            class="h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
-                                        /><span
-                                            class="absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                            >S°04</span
-                                        >
-                                    </div>
-                                    <div
-                                        class="mt-5 flex items-baseline justify-between border-b border-foreground/15 pb-3"
-                                    >
-                                        <h3
-                                            class="font-serif text-2xl tracking-tight"
-                                        >
-                                            Delta Set
-                                        </h3>
-                                        <span
-                                            class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                            >0<!-- -->4</span
+                                            >02</span
                                         >
                                     </div>
                                     <p
@@ -2975,7 +2837,7 @@
                                             class="h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
                                         /><span
                                             class="absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                            >S°05</span
+                                            >S°03</span
                                         >
                                     </div>
                                     <div
@@ -2988,7 +2850,7 @@
                                         </h3>
                                         <span
                                             class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                            >0<!-- -->5</span
+                                            >03</span
                                         >
                                     </div>
                                     <p
@@ -3014,7 +2876,7 @@
                                             class="h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
                                         /><span
                                             class="absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                            >S°06</span
+                                            >S°04</span
                                         >
                                     </div>
                                     <div
@@ -3027,7 +2889,7 @@
                                         </h3>
                                         <span
                                             class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                            >0<!-- -->6</span
+                                            >04</span
                                         >
                                     </div>
                                     <p
@@ -3053,7 +2915,7 @@
                                             class="h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
                                         /><span
                                             class="absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                            >S°07</span
+                                            >S°05</span
                                         >
                                     </div>
                                     <div
@@ -3066,7 +2928,7 @@
                                         </h3>
                                         <span
                                             class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                            >0<!-- -->7</span
+                                            >05</span
                                         >
                                     </div>
                                     <p
@@ -3092,7 +2954,7 @@
                                             class="h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
                                         /><span
                                             class="absolute left-4 top-4 text-[10px] uppercase tracking-[0.25em] text-paper mix-blend-difference"
-                                            >S°08</span
+                                            >S°06</span
                                         >
                                     </div>
                                     <div
@@ -3105,7 +2967,7 @@
                                         </h3>
                                         <span
                                             class="text-[10px] uppercase tracking-[0.25em] text-foreground/50"
-                                            >0<!-- -->8</span
+                                            >06</span
                                         >
                                     </div>
                                     <p
@@ -4575,7 +4437,7 @@
                         </h2>
                     </div>
                     <div
-                        class="grid grid-cols-1 gap-10 border-t border-paper/15 pt-12 md:grid-cols-3"
+                        class="grid grid-cols-1 gap-10 border-t border-paper/15 pt-12 orto-contact-grid"
                     >
                         <div>
                             <div
@@ -4587,7 +4449,7 @@
                                 class="whitespace-pre-line fade-in font-serif text-3xl tracking-tight md:text-4xl"
                                 style="padding: 0; margin: 0"
                             >
-                                Nëntori i Dytë Milloshevë
+                                Rruga “Nëntori i Dytë” – Milloshevë
                             </p>
                         </div>
                         <div>
@@ -4608,21 +4470,6 @@
                                 class="block fade-in whitespace-pre-line font-serif text-3xl tracking-tight hover:text-wood-light md:text-4xl"
                                 >+383 43 993 660</a
                             >
-                        </div>
-                        <div>
-                            <div
-                                class="text-[10px] fade-in uppercase tracking-[0.3em] text-paper/50"
-                             data-sq="Tregjet">
-                                Markets
-                            </div>
-                            <p
-                                class="whitespace-pre-line fade-in font-serif text-3xl tracking-tight md:text-4xl"
-                                style="padding: 0; margin: 0"
-                            
-                                data-sq="Kosovë · Shqipëri Gjermani · Zvicër"
-                            >
-                                Kosovo · Albania Germany · Switzerland
-                            </p>
                         </div>
                     </div>
                 </div>
